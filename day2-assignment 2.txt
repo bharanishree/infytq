@@ -1,0 +1,28 @@
+if food_type=='V':
+        if quantity_ordered>0:
+            if distance_in_kms>6:
+                bill_amount=quantity_ordered*120+((distance_in_kms-6)*6)+9
+            elif distance_in_kms>3:
+                bill_amount=quantity_ordered*120+((distance_in_kms-3)*3)
+            elif distance_in_kms>0:
+                bill_amount=quantity_ordered*120
+            else:
+                bill_amount=-1
+        else:
+            bill_amount=-1
+    elif food_type=='N':
+        if quantity_ordered>0:
+            if distance_in_kms>6:
+                bill_amount=quantity_ordered*150+((distance_in_kms-6)*6)+9
+            elif distance_in_kms>3:
+                bill_amount=quantity_ordered*150+((distance_in_kms-3)*3)
+            elif distance_in_kms>0:
+                bill_amount=quantity_ordered*150
+            else:
+                bill_amount=-1
+        else:
+            bill_amount=-1
+    else:
+        bill_amount=-1
+                
+    return bill_amount
