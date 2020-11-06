@@ -1,0 +1,10 @@
+def find_common_characters(msg1,msg2):
+    res=''
+    for char in msg1:
+        if char in msg2 and char!=' ' and char not in res:
+                res=res+char
+    if res=='':
+        return -1
+    else:
+        
+        return res
