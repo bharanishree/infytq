@@ -1,0 +1,28 @@
+def encrypt_sentence(sentence):
+    #start writing your code here
+    fin=""
+    x=sentence.split()
+    for i in range(0,len(x)):
+        z=""
+        if i%2==0:
+            z=x[i]
+            fin=fin+z[::-1]+' '
+        else:
+            z=x[i]
+            tem=""
+            vow=""
+            con=""
+            for i in z:
+                if i=='a' or i=='e' or i=='i' or i=='o' or i=='u':
+                    vow=vow+i
+                else:
+                    con=con+i
+            tem=con+vow
+            fin=fin+tem+''
+    fin=fin.strip()
+    return fin
+            
+        
+sentence="The sun rises in the east"
+encrypted_sentence=encrypt_sentence(sentence)
+print(encrypted_sentence)

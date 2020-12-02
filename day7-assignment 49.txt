@@ -1,0 +1,7 @@
+import random
+prob=0.7
+for i in range(1,1001):
+    if random.random()<=prob:
+         print("head")
+    else:
+         print("tail")

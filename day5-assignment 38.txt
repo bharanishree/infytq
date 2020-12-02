@@ -1,0 +1,16 @@
+#PF-Assgn-38
+
+def check_double(number):
+    double=2*number
+    str_num=str(number)
+    str_double=str(double)
+    if len(str_num)==len(str_double):
+        for i in range(0,len(str_num)):
+            if str_num[i] in str_double:
+                continue
+            else:
+                return False 
+    else:
+        return False
+    
+    return True
