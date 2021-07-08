@@ -1,0 +1,14 @@
+def check_double(number):
+    double=number*2
+    jk=str(number)
+    jm=str(double)
+    count=0
+    if len(jk)==len(jm):
+        for i in range(0,len(jk)-1):
+                if jk[i] in jm:
+                    continue
+                else:
+                    return False
+    else:
+        return False
+    return True

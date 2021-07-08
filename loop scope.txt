@@ -1,0 +1,19 @@
+def calculate(distance,no_of_passengers):
+    Price_per_litre_of_fuel= 70
+    Mileage_of_the_bus= 10
+    Price_per_ticket = 80
+    #Remove pass and write your logic here
+    total_cost=(Price_per_litre_of_fuel*distance)/Mileage_of_the_bus
+    pass_cost=no_of_passengers*Price_per_ticket
+    if total_cost<pass_cost:
+        profit=pass_cost-total_cost
+        return profit
+    else:
+        return -1
+
+
+
+#Provide different values for distance, no_of_passenger and test your program
+distance=20
+no_of_passengers=50
+print(calculate(distance,no_of_passengers))
