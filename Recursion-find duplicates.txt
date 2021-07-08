@@ -1,0 +1,12 @@
+def find_duplicates(list_of_numbers):
+    lis=[]
+    for i in list_of_numbers:
+        x=list_of_numbers.count(i)
+        if x>1:
+            if i not in lis:
+                lis.append(i)
+    return lis
+
+list_of_numbers=[1,2,2,3,3,3,4,4,4,4]
+list_of_duplicates=find_duplicates(list_of_numbers)
+print(list_of_duplicates)
